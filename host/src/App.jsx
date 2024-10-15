@@ -7,14 +7,14 @@ import Footer from "./components/Footer";
 
 const App = () => (
   <div className="container">
-    <Header/>
+    <Header app={{ name: "Fidget Spinner" }} />
     <div>Home page content.</div>
-    <Footer/>
+    <Footer />
   </div>
 );
-const rootElement = document.getElementById("app")
-if (!rootElement) throw new Error("Failed to find the root element")
+const rootElement = document.getElementById("app");
+if (!rootElement) throw new Error("Failed to find the root element");
 
-const root = ReactDOM.createRoot(rootElement)
+const root = ReactDOM.createRoot(rootElement);
 
-root.render(<App />)
+root.render(<App />);
